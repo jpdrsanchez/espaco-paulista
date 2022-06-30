@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Cannu';
+  src: url('./assets/fonts/cannu.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./assets/fonts/sansation_light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./assets/fonts/sansation_light_italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./assets/fonts/sansation_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./assets/fonts/sansation_italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./assets/fonts/sansation_bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./assets/fonts/sansation_bold_italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  // Typography
+  --text: 'Sansation', sans-serif;
+  --title: 'Cannu', serif;
+
+  // Colors
+  --black: #111;
+  --blackTwo: #333;
+  --white: #fff;
+  --whiteTwo: #f7f7f7;
+  --gray: #828282;
+  --grayTwo: #bdbdbd;
+  --green: #27ae60;
+  --brown: rgba(126, 67, 37, 0.9);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--text);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  @media (min-width: 100em) {
+    max-width: 1520px;
+  }
+}
+
+.siteText {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.preTitle {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.siteTitle {
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.04em;
+}
