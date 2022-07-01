@@ -36,8 +36,8 @@
   </section>
   <section class="aboutStory">
     <div class="container aboutStory__container">
+      <img src="./assets/images/about/about-1.jpg" alt="Espaço Paulista" class="aboutStory__imageOne">
       <div class="aboutStory__images">
-        <img src="./assets/images/about/about-1.jpg" alt="Espaço Paulista" class="aboutStory__imageOne">
         <img src="./assets/images/about/about-2.jpg" alt="Espaço Paulista" class="aboutStory__imageTwo">
       </div>
       <div class="aboutStory__content">

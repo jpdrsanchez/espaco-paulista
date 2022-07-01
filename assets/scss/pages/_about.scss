@@ -28,6 +28,8 @@
   padding-top: 112px;
   padding-bottom: 63px;
   background: var(--whiteTwo);
+  position: relative;
+  z-index: 1;
 
   &__container {
     display: grid;
@@ -45,7 +47,6 @@
 
   &__images {
     position: relative;
-    z-index: 1;
 
     @media (max-width: 61.9375em) {
       display: none;
@@ -57,18 +58,21 @@
   }
 
   &__imageOne {
+    @media (max-width: 61.9375em) {
+      display: none;
+    }
+
     @media (min-width: 62em) {
       position: absolute;
       width: 616px;
       z-index: -1;
-      right: 259px;
-      bottom: 214px;
-      bottom: 214px;
+      left: 50%;
+      bottom: 177px;
+      transform: translateX(calc(-50% - 650px));
     }
 
     @media (min-width: 75em) {
-      right: 459px;
-      bottom: 114px;
+      bottom: 177px;
     }
   }
 
