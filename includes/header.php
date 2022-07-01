@@ -4,7 +4,7 @@
 
 <header class="header">
   <div class="container header__container">
-    <a href="/" class="header__link">
+    <a href="./" class="header__link">
       <img src="./assets/images/logo.svg" alt="Logotipo Espaço Paulista">
       <span class="visually-hidden">Espaço Paulista, onde tudo acontece!</span>
     </a>

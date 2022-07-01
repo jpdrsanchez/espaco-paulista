@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container footer__container">
     <div class="footer__description">
-      <a href="/" class="footer__description__link">
+      <a href="./" class="footer__description__link">
         <img src="./assets/images/logo.svg" alt="Logotipo Espaço Paulista">
         <span class="visually-hidden">Espaço Paulista, onde tudo acontece!</span>
       </a>
