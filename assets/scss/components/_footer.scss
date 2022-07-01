@@ -1,0 +1,130 @@
+.footer {
+  background: var(--blackTwo);
+
+  &__container {
+    display: grid;
+    gap: 20px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--grayThree);
+
+    @media (min-width: 62em) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__description {
+    max-width: 652px;
+
+    @media (max-width: 61.9375em) {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    &__link {
+      display: block;
+      margin-bottom: 15px;
+
+      @media (max-width: 61.9375em) {
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__text {
+      color: var(--white);
+      font-size: 16px;
+      letter-spacing: -0.03em;
+      line-height: 38px;
+    }
+  }
+
+  &__social {
+    @media (max-width: 61.9375em) {
+      text-align: center;
+    }
+
+    &__title {
+      color: var(--white);
+      font-family: var(--title);
+      font-size: 24px;
+      letter-spacing: -0.02em;
+      line-height: 29px;
+      margin-bottom: 15px;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+
+      @media (min-width: 62em) {
+        justify-content: flex-end;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 25px;
+    }
+  }
+
+  &__noweb {
+    padding-top: 9px;
+    padding-bottom: 12px;
+
+    &__container {
+      display: grid;
+      align-items: center;
+      gap: 5px;
+
+      @media (min-width: 62em) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__text {
+      color: var(--white);
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: -0.03em;
+      line-height: 45px;
+
+      @media (max-width: 61.9375em) {
+        text-align: center;
+      }
+    }
+
+    &__link {
+      color: var(--white);
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: -0.03em;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      @media (max-width: 61.9375em) {
+        justify-content: center;
+      }
+
+      &:hover {
+        color: var(--white);
+      }
+
+      img {
+        max-width: 32px;
+      }
+    }
+  }
+}

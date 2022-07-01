@@ -4,5 +4,8 @@
 // Components
 @use './components/header';
 @use './components/menu';
+@use './components/pageCta';
+@use './components/footer';
 
 // Pages
+@use './pages/home';

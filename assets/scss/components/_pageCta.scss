@@ -1,0 +1,25 @@
+.pageCta {
+  padding-top: 66px;
+  padding-bottom: 70px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./assets/images/cta-img.jpg') no-repeat center center;
+  background-size: cover;
+  color: var(--white);
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    margin-bottom: 42px;
+    max-width: 812px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

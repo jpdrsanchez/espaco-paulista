@@ -63,6 +63,7 @@ html {
   --whiteTwo: #f7f7f7;
   --gray: #828282;
   --grayTwo: #bdbdbd;
+  --grayThree: #4f4f4f;
   --green: #27ae60;
   --brown: rgba(126, 67, 37, 0.9);
 }
@@ -120,9 +121,12 @@ img {
 .preTitle {
   font-size: 18px;
   line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: -3px;
 }
 
 .siteTitle {
+  font-family: var(--title);
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.04em;
@@ -174,6 +178,27 @@ img {
     &:last-child {
       right: 0;
       transform: translateX(50%);
+    }
+  }
+
+  &--black {
+    span {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    &:hover {
+      color: currentColor;
+
+      span {
+        background: var(--blackTwo);
+      }
+
+      svg {
+        path {
+          fill: var(--blackTwo);
+        }
+      }
     }
   }
 }
