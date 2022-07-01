@@ -127,3 +127,53 @@ img {
   line-height: 72px;
   letter-spacing: -0.04em;
 }
+
+.siteButton {
+  position: relative;
+  display: block;
+  max-width: max-content;
+
+  &:hover {
+    color: currentColor;
+
+    span {
+      background: var(--whiteTwo);
+    }
+
+    svg {
+      path {
+        fill: var(--whiteTwo);
+      }
+    }
+  }
+
+  span {
+    display: block;
+    width: 228px;
+    padding: 13px 5px 10px;
+    background: var(--white);
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 30px;
+    color: var(--black);
+    transition: all 0.3s;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+
+    &:first-child {
+      left: -8px;
+    }
+
+    &:last-child {
+      right: 0;
+      transform: translateX(50%);
+    }
+  }
+}
