@@ -7,7 +7,9 @@
 @use './components/pageCta';
 @use './components/footer';
 @use './components/pageCover';
+@use './components/gallery';
 
 // Pages
 @use './pages/home';
 @use './pages/about';
+@use './pages/space';
