@@ -16,4 +16,4 @@ jobs:
           script: |
             cd /var/www/
             rm -fr espaco-paulista
-            git@github.com:jpdrsanchez/espaco-paulista.git
+            git clone git@github.com:jpdrsanchez/espaco-paulista.git
