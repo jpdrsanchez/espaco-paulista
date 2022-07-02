@@ -1,3 +1,9 @@
+@keyframes carousel {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .homeMain {
   padding-top: 643px;
   padding-bottom: 144px;
@@ -321,6 +327,42 @@
       color: var(--white);
       text-align: center;
       margin-bottom: 30px;
+    }
+  }
+}
+
+.homeGastronomy {
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  &__text {
+    max-width: 1354px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__carousel {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    animation: carousel forwards 10s linear;
+
+    @media (min-width: 1200px) {
+      animation: carousel forwards 20s linear;
+    }
+
+    & > * {
+      flex-shrink: 0;
     }
   }
 }

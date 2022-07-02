@@ -39,8 +39,26 @@
       </div>
     </div>
   </section>
-  <section class="gastronomyFinal">
+  <?php 
+    $gastronomyItems = [];
+    for($i = 1; $i <=38; $i++) {
+      $gastronomyItems[] = './assets/images/carousel/img-' . $i . '.jpg';
+    }
+  ?>
+  <section class="gastronomyCarousel">
+    <div class="container gastronomyCarousel__container">
+      <h3 class="preTitle gastronomyCarousel__preTitle">A mais alta gastronomia</h3>
+      <h2 class="siteTitle gastronomyCarousel__title">Para seu Evento</h2>
+      <p class="siteText gastronomyCarousel__text">O que acha de ter a mais alta gastronomia disponível em sua comemoração? Clique no botão abaixo e agende agora mesmo uma degustação em nosso espaço.</p>
+    </div>
+    <div class="gastronomyCarousel__carousel">
+      <?php foreach($gastronomyItems as $item) : ?>
+      <img src="<?= $item; ?>" alt="Gastronomia">
+      <?php endforeach; ?>
+    </div>
+  </section>
 
+  <section class="gastronomyFinal">
     <div class="container gastronomyFinal__container">
       <div class="gastronomyFinal__images">
         <div class="gastronomyFinal__images__wrapper">

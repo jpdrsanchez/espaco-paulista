@@ -43,4 +43,6 @@
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/plugins/jquery-3.6.0.min.js"></script>
+<script src="./assets/plugins/magnific-popup/magnific-popup.min.js"></script>
 <script src="./main.js"></script>

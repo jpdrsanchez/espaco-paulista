@@ -17,19 +17,19 @@
       <form class="contact__form">
         <div class="contact__input">
           <label for="name">Nome</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" required>
         </div>
         <div class="contact__input">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" required>
         </div>
         <div class="contact__input">
           <label for="phone">Telefone</label>
-          <input type="text" name="phone" id="phone">
+          <input type="text" name="phone" id="phone" data-phone required>
         </div>
         <div class="contact__input">
-          <label for="event">Telefone</label>
-          <select name="event" id="event">
+          <label for="event">Tipo do evento</label>
+          <select name="event" id="event" required>
             <option value="casamento">Casamento</option>
             <option value="debutante">Debutante</option>
             <option value="aniversario">Aniversário</option>
@@ -38,15 +38,15 @@
         </div>
         <div class="contact__input">
           <label for="date">Data do evento</label>
-          <input type="date" name="date" id="date">
+          <input type="date" name="date" id="date" required>
         </div>
         <div class="contact__input">
-          <label for="convidados">Data do evento</label>
-          <input type="text" name="convidados" id="convidados">
+          <label for="convidados">Número de convidados</label>
+          <input type="text" name="convidados" id="convidados" data-number required>
         </div>
         <div class="contact__input">
           <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+          <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" required></textarea>
         </div>
         <button href="./contato.php" type="submit" class="siteButton siteButton--button siteButton--black contact__button">
           <svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
