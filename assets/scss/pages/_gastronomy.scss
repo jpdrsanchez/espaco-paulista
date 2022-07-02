@@ -1,0 +1,151 @@
+.gastronomyFinal {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+
+  &__container {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      grid-column: 8 / 13;
+      text-align: right;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+
+    @media (max-width: 991px) {
+      margin-right: auto;
+    }
+  }
+
+  &__images {
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      grid-column: 1 / 8;
+    }
+
+    &__wrapper {
+      max-width: 796px;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 30px 27px;
+      align-items: flex-end;
+
+      img {
+        &:last-child {
+          grid-column: span 2;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+  }
+
+  &__textImage {
+    margin: 0 auto 30px;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+.gastronomyIntro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+
+  &__container {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__content {
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+
+    @media (min-width: 992px) {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__images {
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      grid-column: 6 / 13;
+    }
+
+    &__wrapper {
+      max-width: 796px;
+      margin-left: auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 30px 27px;
+      align-items: flex-end;
+
+      img {
+        &:last-child {
+          grid-column: span 2;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+  }
+
+  &__button {
+    @media (max-width: 991px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__textImage {
+    margin: 0 auto 30px;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}
